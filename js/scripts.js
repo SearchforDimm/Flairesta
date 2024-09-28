@@ -25,22 +25,6 @@ jQuery(function ($) {
 	});
 	
 	
-/*--------------------------------------------------
-Function CustomFunction
----------------------------------------------------*/
-
-	function CustomFunction() {
-		
-		//Add here your custom js code
-		
-	}// End CustomFunction
-	
-	
-	
-/*--------------------------------------------------
-	Function Cleanup Before Ajax
----------------------------------------------------*/	
-	
 	function CleanupBeforeAjax(){		
 		// reset all scroll triggers
 		let triggers = ScrollTrigger.getAll();
@@ -52,11 +36,6 @@ Function CustomFunction
 		flSlider.instances = [];
 	}
 	
-	
-	
-/*--------------------------------------------------
-Function Height Titles
----------------------------------------------------*/
 
 	function HeightTitles() {
   
@@ -91,34 +70,14 @@ Function Height Titles
 		generateSpans('.height-title .next-hero-title');
 		generateSpans('.height-title .slide-hero-title');
 		generateSpans('.fixed-title');
-	}	
-				
+	}
 
-/*--------------------------------------------------
-Function Page Load
----------------------------------------------------*/
 
 	function PageLoad() {
 		
 		gsap.set($(".menu-timeline .before-span"), {y: 120, opacity:0});
 		
-		// Page Navigation Events
-		$(".preloader-wrap").on('mouseenter', function() {	
-			var $this = $(this);			
-			gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(255,255,255,0)", backgroundColor:"rgba(255,255,255,0.1)"});
-			gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-			$("#ball").addClass("with-blur");
-			$( "#ball" ).append( '<p class="center-first">' + $this.data("centerline") + '</p>' );				
-		});
-							
-		$(".preloader-wrap").on('mouseleave', function() {					
-			gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-			gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-			$("#ball").removeClass("with-blur");
-			$('#ball p').remove();			
-		});
-		
-		$('body').removeClass('hidden').removeClass('hidden-ball');
+		$('body').removeClass('hidden')
 		
 		gsap.to($("#header-container"), {duration: 0.5, opacity:1, delay:0.2, ease:Power2.easeOut}); 
 		
@@ -126,9 +85,6 @@ Function Page Load
 		function initOnFirstLoad() {
 		
 			imagesLoaded('body', function() {
-				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-				$('#ball p').remove();
 				gsap.to($(".percentage-wrapper"), {duration: 0.7, x:$(".trackbar").width()*0.5 - $(".percentage-wrapper").width() * 0.5, delay:0.3, ease:Power4.easeOut});
 				gsap.to($(".percentage"), {duration: 0.7, opacity:0, y:-100, delay:1, ease:Power4.easeInOut});
 				gsap.to($(".percentage-intro"), {duration: 0.5, opacity:0, delay:0, ease:Power4.easeInOut});
@@ -137,9 +93,7 @@ Function Page Load
 				gsap.to($(".preloader-wrap"), {duration: 0.3, opacity:0, delay:1, ease:Power2.easeOut});
 				gsap.set($(".preloader-wrap"), {visibility:'hidden', delay:1.3, yPercent: -101});										
 				
-				setTimeout(function(){
-					$("#ball").removeClass("with-blur");
-					
+				setTimeout(function(){					
 					gsap.to($(".header-middle, #footer-container"), {duration: 1, opacity:1, delay:0, ease:Power2.easeOut});
 					
 					if( $('.hero-video-wrapper').length > 0 ){
@@ -334,51 +288,16 @@ Function Page Load
 		}
 		
 		
-	}// End Page Load
+	}
 
 	
-	
-/*--------------------------------------------------
-Page Load Actions
----------------------------------------------------*/	
-	
-	function PageLoadActions() {
-		
-		
-		// Default Page Navigation Load Events
-		
-		if (!isMobile()) {			
-			
-			
-			$("#page-nav .page-title").on('mouseenter', function() {
-				var $this = $(this);			
-				gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(255,255,255,0)", backgroundColor:"rgba(128,128,128,0.5)"});
-				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-				$("#ball").addClass("with-blur");
-				$( "#ball" ).append( '<p class="center-first">' + $this.data("centerline") + '</p>' );				
-			});
-								
-			$("#page-nav .page-title").on('mouseleave', function() {				
-				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-				$("#ball").removeClass("with-blur");
-				$('#ball p').remove();			
-			});
-					
-		}		
-		
+	function PageLoadActions() {	
 		if (!$("body").hasClass("disable-ajaxload")) {
 			$('#page-nav .page-title').on('click', function() {	
 				$("body").addClass("show-loader");
 				$('header').removeClass('white-header');
 				$("#app").remove();
 				$(".big-title-caption").remove();	
-					
-				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-				$("#ball").removeClass("with-icon");
-				$('#ball p').remove();
-				$('#ball i').remove();
 				
 				gsap.to('.hero-arrow i', {duration: 0.3, y:-40, opacity:0, delay:0, ease:Power2.easeInOut});				
 				
@@ -412,12 +331,6 @@ Page Load Actions
 				$('header').removeClass('white-header');
 				$("#app").remove();
 				$(".big-title-caption").remove();	
-					
-				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-				$("#ball").removeClass("with-icon");
-				$('#ball p').remove();
-				$('#ball i').remove();
 				
 				gsap.to($("#main-page-content, #hero, #page-nav"), {duration: 0.3, opacity:0});
 				gsap.to($("footer"), {duration: 0.3, opacity:0, delay:0, ease:Power2.easeInOut});
@@ -429,19 +342,10 @@ Page Load Actions
 		if (!isMobile()) {
 			
 			$("#project-nav .next-ajax-link-project").mouseenter(function(e) {	
-				var $this = $(this);		
-				$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );
-				gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(255,255,255,0)", backgroundColor:"rgba(255,255,255,0.1)"});
-				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-				$("#ball").addClass("with-blur");
 				$("#project-nav .next-hero-title").addClass('hover-title');				
 			});
 							
 			$("#project-nav .next-ajax-link-project").mouseleave(function(e) {
-				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-				$("#ball").removeClass("with-blur");
-				$('#ball p').remove();
 				$("#project-nav .next-hero-title").removeClass('hover-title');
 			});
 		}
@@ -537,13 +441,7 @@ Page Load Actions
 				gsap.to($(".next-hero-progress span"), {duration: 0.4, width:"100%", ease:Power2.easeInOut,onComplete: function() {
 					gsap.to($(".next-hero-progress"), {duration: 0.4, width:"0%", ease:Power2.easeInOut});
 				}});
-					
-				gsap.to('#ball', {duration: 0.3, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-				gsap.to('#ball-loader', {duration: 0.3, borderWidth: '4px', top: 0, left: 0});
-				$("#ball").removeClass("with-icon");
-				$('#ball p').remove();
-				$('#ball i').remove();
-				
+
 				gsap.to($("#main-page-content, #hero, #hero-image-wrapper"), {duration: 0.3, opacity:0});			
 				gsap.to($(".next-project-image"), {duration: 0.6, scale:1.02, clipPath: 'inset(0 0%)', opacity:1, ease:Power2.easeInOut,onComplete: function() {
 				  $('.temporary .next-project-image').addClass("visible")
@@ -554,12 +452,7 @@ Page Load Actions
 			$('.next-ajax-link-project').on('click', function() {					
 				$("body").addClass("load-project-thumb-with-title").addClass("show-loader");							
 				$('header').removeClass('white-header');
-				$("#app").remove();									
-				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-				$("#ball").removeClass("with-icon with-blur");
-				$('#ball p').remove();
-				$('#ball i').remove();				
+				$("#app").remove();	
 				gsap.to($("#main-page-content, #hero, #hero-image-wrapper, #project-nav"), {duration: 0.3, opacity:0});			
 				gsap.to($(".next-project-image"), {duration: 0.6, scale:1, opacity: 0, ease:Power2.easeOut});
 				gsap.to($("footer, .all-works"), {duration: 0.3, opacity:0, ease:Power2.easeInOut});							
@@ -567,14 +460,8 @@ Page Load Actions
 		}
 		
 		
-	}// Page Load Actions
+	}
 	
-	
-
-	
-/*--------------------------------------------------
-Function Lazy Load
----------------------------------------------------*/
 
 	function LazyLoad() {	
 		
@@ -774,14 +661,8 @@ Function Lazy Load
 		} , 800 );
 		
 	
-	}// End Lazy Load
-	
+	}
 
-
-
-/*--------------------------------------------------
-Function Showcase Overlapping Gallery
----------------------------------------------------*/
 	
 	function ShowcaseOverlapping() {
 		
@@ -861,20 +742,10 @@ Function Showcase Overlapping Gallery
 			if (!isMobile()) {	
 							
 				$(".overlapping-gallery .trigger-item").on('mouseenter', function() {
-					$('#ball p').remove();
-					var $this = $(this);			
-					gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(255,255,255,0)", backgroundColor:"rgba(255,255,255,0.1)"});
-					gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-					$("#ball").addClass("with-blur");
-					$( "#ball" ).append( '<p class="center-first">' + $this.data("centerline") + '</p>' );
 					$(this).find('video').each(function() {
 						$(this).get(0).play();
 					});								
 				}).on('mouseleave', function() {	
-					gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-					gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-					$("#ball").removeClass("with-blur");
-					$('#ball p').remove();		
 					$(this).find('video').each(function() {
 						$(this).get(0).pause();
 					});
@@ -928,22 +799,13 @@ Function Showcase Overlapping Gallery
 				}, 300);
 				gsap.to('footer, .slide-date, .slide-cat', { duration: 0.5, opacity: 0, ease: Power2.easeIn });
 				gsap.to('.slide-title span', { duration: 0.4, opacity: 0, yPercent:10, delay:0.1, ease: Power4.easeInOut });			
-				gsap.to('#ball', { duration: 0.3, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
-				gsap.to('#ball-loader', { duration: 0.3, borderWidth: '4px', top: 0, left: 0 });
-				$("#ball").removeClass("with-blur");
-				$('#ball p').remove();
 			});	
 			
 		} //End Overlapping Gallery
 		
 		
-	}// End Showcase Overlapping Gallery
+	}
 
-	
-
-/*--------------------------------------------------
-Function Showcase Portfolio
----------------------------------------------------*/	
 		
 	function ShowcasePortfolio() {
 		
@@ -1124,20 +986,10 @@ Function Showcase Portfolio
 			if (!isMobile()) {	
 							
 				$(".showcase-portfolio .fl-item .slide-inner").on('mouseenter', function() {
-					$('#ball p').remove();
-					var $this = $(this);			
-					gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(255,255,255,0)", backgroundColor:"rgba(255,255,255,0.1)"});
-					gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-					$("#ball").addClass("with-blur");
-					$( "#ball" ).append( '<p class="center-first">' + $this.data("centerline") + '</p>' );
 					$(this).find('video').each(function() {
 						$(this).get(0).play();
 					});								
 				}).on('mouseleave', function() {	
-					gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-					gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-					$("#ball").removeClass("with-blur");
-					$('#ball p').remove();		
 					$(this).find('video').each(function() {
 						$(this).get(0).pause();
 					});
@@ -1177,22 +1029,12 @@ Function Showcase Portfolio
 					$("body").addClass("show-loader");
 				}, 300);
 				gsap.to('footer, .carousel-nav-wrapper, .showcase-portfolio.list-grid', { duration: 0.5, opacity: 0, ease: Power4.easeInOut });			
-				gsap.to('#ball', { duration: 0.3, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
-				gsap.to('#ball-loader', { duration: 0.3, borderWidth: '4px', top: 0, left: 0 });
-				$("#ball").removeClass("with-blur");
-				$('#ball p').remove();
 			});
 			
 		}
 	
-	}//End Showcase Portfolio
+	}
 	
-	
-	
-	
-/*--------------------------------------------------
-Function Showcase Gallery
----------------------------------------------------*/	
 		
 	function ShowcaseGallery() {
 		
@@ -1527,13 +1369,7 @@ Function Showcase Gallery
 					gsap.to($(".showcase-gallery .slider-fixed-content .caption-timeline span"), { duration: 0.7, y: 0, opacity: 1, stagger: 0.05, delay: 0.2, ease: Power3.easeOut });
 				}
 				
-				gsap.to($("footer .link-text, .fl-pagination, .progress-info, #filters-wrapper"), {duration: 0.3, opacity:1, y:0, stagger:0.05, delay:0.4, ease:Power2.easeInOut});
-				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-				$("#ball").removeClass("with-blur");
-				$('#ball p').remove();
-				
-			
+				gsap.to($("footer .link-text, .fl-pagination, .progress-info, #filters-wrapper"), {duration: 0.3, opacity:1, y:0, stagger:0.05, delay:0.4, ease:Power2.easeInOut});				
 			}
 			
 			// Returns some DOM elements that are needed for showing/hiding the grid
@@ -1937,24 +1773,15 @@ Function Showcase Gallery
 
 				
 				$('.fl-slider').on('mouseup touchend', function() {
-					gsap.to('#ball', {duration: 1, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent', ease:Elastic.easeOut});
 					$("body").removeClass("scale-drag-x");
 				});
 				
 				$("body").on('mouseleave', function() {					
-					gsap.to('#ball', {duration: 1, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent', ease:Elastic.easeOut});
 					$("body").removeClass("scale-drag-x");					
 				});
 					
-				
 				$(".showcase-gallery.preview-mode-enabled .fl-slide .slide-inner").on('mouseenter', function() {	
 					if (!$('body').hasClass('scale-drag-x')) {
-						$('#ball p').remove();
-						var $this = $(this);			
-						gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(255,255,255,0)", backgroundColor:"rgba(255,255,255,0.1)"});
-						gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-						$("#ball").addClass("with-blur");
-						$( "#ball" ).append( '<p class="center-first">' + $this.data("centerline") + '</p>' );
 						$(this).find('video').each(function() {
 							$(this).get(0).play();
 						});
@@ -1962,10 +1789,6 @@ Function Showcase Gallery
 					}			
 				}).on('mouseleave', function() {					
 					if (!$('body').hasClass('scale-drag-x')) {
-						gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-						gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-						$("#ball").removeClass("with-blur");
-						$('#ball p').remove();		
 						$(this).find('video').each(function() {
 							$(this).get(0).pause();
 						});
@@ -1975,21 +1798,12 @@ Function Showcase Gallery
 				
 				$(".trigger-item").on('mouseenter', function() {	
 					if (!$('body').hasClass('scale-drag-x')) {
-						var $this = $(this);			
-						gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(255,255,255,0)", backgroundColor:"rgba(255,255,255,0.1)"});
-						gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-						$("#ball").addClass("with-blur");
-						$( "#ball" ).append( '<p class="center-first">' + $this.data("centerline") + '</p>' );
 						$(this).find('video').each(function() {
 							$(this).get(0).play();
 						});
 					}			
 				}).on('mouseleave', function() {					
 					if (!$('body').hasClass('scale-drag-x')) {
-						gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-						gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-						$("#ball").removeClass("with-blur");
-						$('#ball p').remove();		
 						$(this).find('video').each(function() {
 							$(this).get(0).pause();
 						});
@@ -2089,19 +1903,12 @@ Function Showcase Gallery
 				}, 300);
 			
 				gsap.to('footer, .carousel-nav-wrapper', { duration: 0.5, opacity: 0, ease: Power4.easeInOut });
-			
-				gsap.to('#ball', { duration: 0.3, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
-				gsap.to('#ball-loader', { duration: 0.3, borderWidth: '4px', top: 0, left: 0 });
-				$("#ball").removeClass("with-blur");
-				$('#ball p').remove();
 			});
 			
 			
 		}
 	
-	}//End Showcase Gallery
-
-
+	}
 
 	window.LoadViaAjax = function() {	
 		HeightTitles()
@@ -2121,14 +1928,10 @@ Function Showcase Gallery
 		Lightbox();
 		PlayVideo();
 		ContactForm();
-		ContactMap();
-		CustomFunction();
-		
-	}//End Load Via Ajax
+		ContactMap();		
+	}
 	
 });	
 
 
-var LoadViaAjax = window.LoadViaAjax;	
-	
-	
+var LoadViaAjax = window.LoadViaAjax;
