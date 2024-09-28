@@ -170,6 +170,22 @@
   transform: scale(1.05);
 }
 
+.image-row-two {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+  /* padding-left: 120px; */
+}
+
+.card-row-columns {
+  display: flex;
+  flex-direction: column;
+}
+.image-row-two figure {
+  width: 90%;
+}
+
 .text-align-center .hero-title {
   margin-left: 0;
 }
