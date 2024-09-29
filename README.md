@@ -95,3 +95,8 @@ Berikut adalah instruksi yang lebih sederhana untuk menginstall dan menjalankan 
    Page Category
  - https://github.com/user-attachments/assets/f3e261d6-0437-49cb-b40f-bdd4df6e25db
    Home Page
+
+### Credit 
+   - Dimm | Dev (github.com/searchfordimm)
+   - Amuzha | Dev (github.com/amuzha)
+   - Ayumi | Dev (github.com/ayoumi0416)
