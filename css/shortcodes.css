@@ -3255,7 +3255,7 @@ input[type="submit"] {
   justify-content: space-between;
   flex-wrap: wrap;
   box-sizing: border-box;
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 .start-move-thumb {
