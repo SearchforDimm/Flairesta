@@ -20,7 +20,6 @@ jQuery(function ($) {
 		Lightbox();
 		ContactForm();	
 		PlayVideo();
-		ContactMap();
 		CustomFunction();
 	});
 	
@@ -1928,7 +1927,6 @@ jQuery(function ($) {
 		Lightbox();
 		PlayVideo();
 		ContactForm();
-		ContactMap();		
 	}
 	
 });	
