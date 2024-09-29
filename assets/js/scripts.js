@@ -20,7 +20,6 @@ jQuery(function ($) {
 		Lightbox();
 		ContactForm();	
 		PlayVideo();
-		CustomFunction();
 	});
 	
 	
