@@ -95,6 +95,3 @@ Berikut adalah instruksi yang lebih sederhana untuk menginstall dan menjalankan 
    Page Category
  - https://github.com/user-attachments/assets/f3e261d6-0437-49cb-b40f-bdd4df6e25db
    Home Page
-
-### Note
-   - Ada error sedikit ketika berpindah ke category page, yang dimana image tidak keload, harus direfresh terlebih dahulu.
