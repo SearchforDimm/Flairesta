@@ -1,523 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Flairesta - Vintage Category</title>
-    <meta
-      name="description"
-      content="Flairesta - Your fashion destination! Explore outfit collections from casual, retro, street, and vintage categories. Find the perfect style for every occasion and be the center of attention!"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="author" content="The Artisans" />
+  <title>Flairesta - Vintage Category</title>
+  <meta name="description"
+    content="Flairesta - Your fashion destination! Explore outfit collections from casual, retro, street, and vintage categories. Find the perfect style for every occasion and be the center of attention!" />
 
-    <link rel="icon" type="image/ico" href="../favicon.ico" />
+  <meta name="author" content="The Artisans" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="icon" type="image/ico" href="../favicon.ico" />
 
-    <link href="../style.css" rel="stylesheet" />
-    <link href="../css/all.min.css" rel="stylesheet" />
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet" />
 
-  <body
-    class="hidden hidden-ball smooth-scroll rounded-borders"
-    data-primary-color="#8c6144"
-  >
-    <main>
-      <div class="preloader-wrap" data-centerLine="Loading">
-        <div class="outer">
-          <div class="inner">
-            <div class="trackbar">
-              <div class="preloader-intro">
-                <span>Loading</span>
-              </div>
-              <div class="loadbar"></div>
-              <div class="percentage-wrapper">
-                <div class="percentage" id="precent"></div>
-              </div>
+  <link href="../assets/css/all.min.css" rel="stylesheet" />
+  
+  <link href="../assets/style.css" rel="stylesheet" />
+</head>
+
+<body class="hidden smooth-scroll rounded-borders" data-primary-color="#8c6144">
+  <main>
+    <div class="preloader-wrap" data-centerLine="Loading">
+      <div class="outer">
+        <div class="inner">
+          <div class="trackbar">
+            <div class="preloader-intro">
+              <span>Loading</span>
             </div>
-
-            <div class="percentage-intro">Please wait, content is loading</div>
+            <div class="loadbar"></div>
+            <div class="percentage-wrapper">
+              <div class="percentage" id="precent"></div>
+            </div>
           </div>
+
+          <div class="percentage-intro">Please wait, content is loading</div>
         </div>
       </div>
+    </div>
 
-      <div class="cd-index cd-main-content">
-        <div id="fl-page-content" class="light-content" data-bgcolor="#DADADA">
-          <header class="fullscreen-menu invert-header" data-menucolor="#000">
-            <div id="header-container">
-              <div id="logo" class="hide-ball">
-                <a class="ajax-link" data-type="page-transition" href="../">
-                  <img
-                    class="black-logo"
-                    src="../images/logo.png"
-                    alt="Flairesta Logo"
-                  />
-                  <img
-                    class="white-logo"
-                    src="../images/logo-white.png"
-                    alt="Flairesta Logo"
-                  />
-                </a>
+    <div class="cd-index cd-main-content">
+      <div id="fl-page-content" class="light-content" data-bgcolor="#DADADA">
+        <header class="fullscreen-menu invert-header" data-menucolor="#000">
+          <div id="header-container">
+            <div id="logo" class="hide-ball">
+              <a class="ajax-link" data-type="page-transition" href="../">
+                <img class="black-logo" src="../assets/images/logo.png" alt="Flairesta Logo" />
+                <img class="white-logo" src="../assets/images/logo-white.png" alt="Flairesta Logo" />
+              </a>
+            </div>
+
+            <nav>
+              <div class="nav-height">
+                <div class="outer">
+                  <div class="inner">
+                    <ul data-breakpoint="10025" class="flexnav">
+                      <li class="link menu-timeline">
+                        <a class="" href="../">
+                          <div class="before-span">
+                            <span data-hover="Home">Home</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="link menu-timeline">
+                        <a class="" href="../category/">
+                          <div class="before-span">
+                            <span data-hover="Category">Category</span>
+                          </div>
+                        </a>
+                        <ul>
+                          <li>
+                            <a class="ajax-link" href="casual.html" data-type="page-transition">Casual</a>
+                          </li>
+                          <li>
+                            <a class="ajax-link" href="retro.html" data-type="page-transition">Retro</a>
+                          </li>
+                          <li>
+                            <a class="ajax-link" href="vintage.html" data-type="page-transition">Vintage</a>
+                          </li>
+                          <li>
+                            <a class="ajax-link" href="preppy.html" data-type="page-transition">Preppy</a>
+                          </li>
+                          <li>
+                            <a class="ajax-link" href="street.html" data-type="page-transition">Street</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="link menu-timeline">
+                        <a class="ajax-link" data-type="page-transition" href="../about.html">
+                          <div class="before-span">
+                            <span data-hover="About">About</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
+            </nav>
 
-              <nav>
-                <div class="nav-height">
-                  <div class="outer">
-                    <div class="inner">
-                      <ul data-breakpoint="10025" class="flexnav">
-                        <li class="link menu-timeline">
-                          <a class="" href="../">
-                            <div class="before-span">
-                              <span data-hover="Home">Home</span>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="link menu-timeline">
-                          <a class="" href="#">
-                            <div class="before-span">
-                              <span data-hover="Category">Category</span>
-                            </div>
-                          </a>
-                          <ul>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="../category/casual.html"
-                                data-type="page-transition"
-                                >Casual</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="../category/retro.html"
-                                data-type="page-transition"
-                                >Retro</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="../category/vintage.html"
-                                data-type="page-transition"
-                                >Vintage</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="../category/preppy.html"
-                                data-type="page-transition"
-                                >Preppy</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="../category/street.html"
-                                data-type="page-transition"
-                                >Street</a
-                              >
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="link menu-timeline">
-                          <a
-                            class="ajax-link"
-                            data-type="page-transition"
-                            href="../about.html"
-                          >
-                            <div class="before-span">
-                              <span data-hover="About">About</span>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
+            <div class="button-wrap right menu burger-lines">
+              <div class="icon-wrap parallax-wrap">
+                <div class="button-icon parallax-element">
+                  <div id="burger-wrapper">
+                    <div id="menu-burger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
                     </div>
                   </div>
                 </div>
-              </nav>
+              </div>
+              <div class="button-text sticky right">
+                <span data-hover="Menu">Menu</span>
+              </div>
+            </div>
+          </div>
+        </header>
 
-              <div class="button-wrap right menu burger-lines">
+        <div id="content-scroll">
+          <div id="main">
+            <div id="hero" class="has-image autoscroll1">
+              <div id="hero-styles">
+                <div id="hero-caption" class="content-full-width height-title">
+                  <div class="inner">
+                    <h1 class="hero-title caption-timeline primary-font-title">
+                      <span>VINTAGE</span>
+                    </h1>
+                  </div>
+                </div>
+                <div id="hero-description" class="content-full-width">
+                  <div class="inner">
+                    <p class="bigger has-opacity">
+                      Step into the past with the Flairesta Vintage
+                      Collection, where classic styles meet modern
+                      craftsmanship. Inspired by the elegance of bygone eras,
+                      our vintage outfits offer timeless pieces that never go
+                      out of style. Think flowing dresses, high-waisted
+                      trousers, and chic blouses—all made with a nod to retro
+                      fashion but designed for today’s world. Whether you’re
+                      channeling the 50s, 70s, or 90s, this collection lets
+                      you embrace nostalgia while staying effortlessly chic.
+                    </p>
+                    <br />
+
+                    <hr />
+                  </div>
+                </div>
+                <div id="hero-footer">
+                  <div class="hero-footer-left">
+                    <div class="button-wrap right scroll-down">
+                      <div class="icon-wrap parallax-wrap">
+                        <div class="button-icon parallax-element">
+                          <i class="arrow-icon-down"></i>
+                        </div>
+                      </div>
+                      <div class="button-text sticky right">
+                        <span data-hover="Scroll to Explore">Scroll to Explore</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hero-footer-right" style="display: none">
+                    <div id="share" class="page-action-content" data-text="Share:"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="hero-image-wrapper">
+              <div id="hero-background-layer" class="parallax-scroll-image">
+                <div id="hero-bg-image" style="
+                      background-image: url(../assets/images/hero-vintage.avif);
+                      background-repeat: no-repeat;
+                    "></div>
+              </div>
+            </div>
+
+            <div id="main-content">
+              <div id="main-page-content">
+                <div class="content-row row_padding_top row_padding_bottom light-section change-header-color"
+                  data-bgcolor="#fff">
+                  <div class="one_half"></div>
+
+                  <div class="one_half last">
+                    <h1 class="primary-font-title has-mask-fill">
+                      Outfit Inspo
+                    </h1>
+                    <p>
+                      <span class="has-opacity">READY TO EMBRACE THE CHARM OF VINTAGE FASHION?
+                        FLAIRESTA VINTAGE OUTFIT INSPIRATION IS HERE TO HELP
+                        YOU BUILD A WARDROBE THAT’S EFFORTLESSLY TIMELESS.
+                        FROM ICONIC SILHOUETTES TO RETRO PRINTS, WE’VE GOT
+                        STYLING IDEAS TO BRING THE BEST OF VINTAGE STYLE INTO
+                        YOUR EVERYDAY LOOKS.
+                      </span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="content-row light-section change-header-color card-row card-row-columns"
+                  data-bgcolor="#fff">
+                  <div class="image-row-two">
+                    <div class="one_half last vertical-parallax" data-startparallax="0" data-endparallax="0.3">
+                      <figure class="image-scale-parent">
+                        <a href="../assets/images/fashion/vintage/pinterest-vintage-01.jpg" class="image-link"><img
+                            src="../assets/images/fashion/vintage/pinterest-vintage-01.jpg" alt="Image Title" /></a>
+                        <figcaption>
+                          Women Wearing a Vintage Outfit
+                        </figcaption>
+                      </figure>
+                    </div>
+
+                    <div class="one_half last vertical-parallax" data-startparallax="0" data-endparallax="0.15">
+                      <figure class="image-scale-parent">
+                        <a href="../assets/images/fashion/vintage/google-vintage-06.jpeg" class="image-link"><img
+                            src="../assets/images/fashion/vintage/google-vintage-06.jpeg" alt="Image Title" /></a>
+                        <figcaption>
+                          Women Wearing a Vintage Outfit
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="one_half last vertical-parallax" data-startparallax="0" data-endparallax="0.30">
+                      <figure class="image-scale-parent">
+                        <a href="../assets/images/fashion/vintage/google-vintage-07.jpg" class="image-link"><img
+                            src="../assets/images/fashion/vintage/google-vintage-07.jpg" alt="Image Title" /></a>
+                        <figcaption>
+                          Women Wearing a Vintage Outfit
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+
+                  <div class="light-section change-header-color image-row-two">
+                    <div class="one_half last vertical-parallax" data-startparallax="0" data-endparallax="0.30">
+                      <figure class="image-scale-parent">
+                        <a href="../assets/images/fashion/vintage/google-vintage-08.jpg" class="image-link"><img
+                            src="../assets/images/fashion/vintage/google-vintage-08.jpg" alt="Image Title" /></a>
+                        <figcaption>
+                          Women Wearing a Vintage Outfit
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="one_half last vertical-parallax" data-startparallax="0" data-endparallax="0.30">
+                      <figure class="image-scale-parent">
+                        <a href="../assets/images/fashion/vintage/pinterest-vintage-03.jpg" class="image-link"><img
+                            src="../assets/images/fashion/vintage/pinterest-vintage-03.jpg" alt="Image Title" /></a>
+                        <figcaption>
+                          Women Wearing a Vintage Outfit
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-row full dark-section" data-bgcolor="#171717">
+                  <figure class="has-parallax">
+                    <img src="../assets/images/hero-vintage.avif" alt="Image Title" />
+                  </figure>
+                </div>
+              </div>
+
+              <div id="project-nav" class="">
+                <div class="next-project-wrap">
+                  <div class="next-project-caption text-align-center content-full-width height-title">
+                    <div class="next-caption-wrapper">
+                      <div class="caption-wrapper">
+                        <a class="next-ajax-link-project auto-trigger" data-type="page-transition" href="preppy.html"
+                          data-color="#963a8d" data-firstline="Next" data-secondline="Project"></a>
+                        <div class="next-caption">
+                          <div class="next-hero-subtitle"><span></span></div>
+                          <div class="next-hero-title primary-font-title">
+                            <span>next category</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="next-hero-progress"><span></span></div>
+
+                  <div class="next-project-image-wrapper">
+                    <div class="next-project-image">
+                      <!-- source image : https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mouqy.com%2Fblog%2Fpreppy-aesthetic-with-glasses%2F&psig=AOvVaw2ZyliJXYgUBn2m1teJ4JOW&ust=1727680365759000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiloL3P54gDFQAAAAAdAAAAABAe -->
+                      <div class="next-project-image-bg" style="
+                            background-image: url(../assets/images/hero-preppy.jpg);
+                          "></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="hidden">
+            <div id="footer-container">
+              <div id="backtotop" class="button-wrap left">
                 <div class="icon-wrap parallax-wrap">
                   <div class="button-icon parallax-element">
-                    <div id="burger-wrapper">
-                      <div id="menu-burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </div>
-                    </div>
+                    <i class="fa-solid fa-angle-up"></i>
                   </div>
                 </div>
-                <div class="button-text sticky right">
-                  <span data-hover="Menu">Menu</span>
+                <div class="button-text sticky left">
+                  <span data-hover="Back Top">Back Top</span>
                 </div>
+              </div>
+
+              <div class="footer-middle">
+                <div class="copyright">
+                  2024 ©
+                  <a class="link" target="_blank" href="./">Flairesta</a>. All
+                  rights reserved.
+                </div>
+              </div>
+
+              <div class="socials-wrap">
+                <div class="socials-icon">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div class="socials-text">Follow Us</div>
+                <ul class="socials">
+                  <li>
+                    <span class="parallax-wrap"><a class="parallax-element" href="https://www.dribbble.com/"
+                        target="_blank">Db</a></span>
+                  </li>
+                  <li>
+                    <span class="parallax-wrap"><a class="parallax-element" href="https://www.twitter.com/"
+                        target="_blank">Tw</a></span>
+                  </li>
+                  <li>
+                    <span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/"
+                        target="_blank">Fb</a></span>
+                  </li>
+                  <li>
+                    <span class="parallax-wrap"><a class="parallax-element"
+                        href="https://www.instagram.com/">Ig</a></span>
+                  </li>
+                </ul>
               </div>
             </div>
-          </header>
-
-          <div id="content-scroll">
-            <div id="main">
-              <div id="hero" class="has-image autoscroll1">
-                <div id="hero-styles">
-                  <div
-                    id="hero-caption"
-                    class="content-full-width height-title"
-                  >
-                    <div class="inner">
-                      <h1
-                        class="hero-title caption-timeline primary-font-title"
-                      >
-                        <span>VINTAGE</span>
-                      </h1>
-                    </div>
-                  </div>
-                  <div id="hero-description" class="content-full-width">
-                    <div class="inner">
-                      <p class="bigger has-opacity">
-                        Step into the past with the Flairesta Vintage
-                        Collection, where classic styles meet modern
-                        craftsmanship. Inspired by the elegance of bygone eras,
-                        our vintage outfits offer timeless pieces that never go
-                        out of style. Think flowing dresses, high-waisted
-                        trousers, and chic blouses—all made with a nod to retro
-                        fashion but designed for today’s world. Whether you’re
-                        channeling the 50s, 70s, or 90s, this collection lets
-                        you embrace nostalgia while staying effortlessly chic.
-                      </p>
-                      <br />
-
-                      <hr />
-                    </div>
-                  </div>
-                  <div id="hero-footer">
-                    <div class="hero-footer-left">
-                      <div class="button-wrap right scroll-down">
-                        <div class="icon-wrap parallax-wrap">
-                          <div class="button-icon parallax-element">
-                            <i class="arrow-icon-down"></i>
-                          </div>
-                        </div>
-                        <div class="button-text sticky right">
-                          <span data-hover="Scroll to Explore"
-                            >Scroll to Explore</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div class="hero-footer-right" style="display: none">
-                      <div
-                        id="share"
-                        class="page-action-content"
-                        data-text="Share:"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="hero-image-wrapper">
-                <div id="hero-background-layer" class="parallax-scroll-image">
-                  <div
-                    id="hero-bg-image"
-                    style="
-                      background-image: url(../images/hero-vintage.avif);
-                      background-repeat: no-repeat;
-                    "
-                  ></div>
-                </div>
-              </div>
-
-              <div id="main-content">
-                <div id="main-page-content">
-                  <div
-                    class="content-row row_padding_top row_padding_bottom light-section change-header-color"
-                    data-bgcolor="#fff"
-                  >
-                    <div class="one_half"></div>
-
-                    <div class="one_half last">
-                      <h1 class="primary-font-title has-mask-fill">
-                        Outfit Inspo
-                      </h1>
-                      <p>
-                        <span class="has-opacity"
-                          >READY TO EMBRACE THE CHARM OF VINTAGE FASHION?
-                          FLAIRESTA VINTAGE OUTFIT INSPIRATION IS HERE TO HELP
-                          YOU BUILD A WARDROBE THAT’S EFFORTLESSLY TIMELESS.
-                          FROM ICONIC SILHOUETTES TO RETRO PRINTS, WE’VE GOT
-                          STYLING IDEAS TO BRING THE BEST OF VINTAGE STYLE INTO
-                          YOUR EVERYDAY LOOKS.
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="content-row light-section change-header-color card-row card-row-columns"
-                    data-bgcolor="#fff"
-                  >
-                    <div class="image-row-two">
-                      <div
-                        class="one_half last vertical-parallax"
-                        data-startparallax="0"
-                        data-endparallax="0.3"
-                      >
-                        <figure class="image-scale-parent">
-                          <a
-                            href="../images/fashion/vintage/pinterest-vintage-01.jpg"
-                            class="image-link"
-                            ><img
-                              src="../images/fashion/vintage/pinterest-vintage-01.jpg"
-                              alt="Image Title"
-                          /></a>
-                          <figcaption>
-                            Women Wearing a Vintage Outfit
-                          </figcaption>
-                        </figure>
-                      </div>
-
-                      <div
-                        class="one_half last vertical-parallax"
-                        data-startparallax="0"
-                        data-endparallax="0.15"
-                      >
-                        <figure class="image-scale-parent">
-                          <a
-                            href="../images/fashion/vintage/google-vintage-06.jpeg"
-                            class="image-link"
-                            ><img
-                              src="../images/fashion/vintage/google-vintage-06.jpeg"
-                              alt="Image Title"
-                          /></a>
-                          <figcaption>
-                            Women Wearing a Vintage Outfit
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div
-                        class="one_half last vertical-parallax"
-                        data-startparallax="0"
-                        data-endparallax="0.30"
-                      >
-                        <figure class="image-scale-parent">
-                          <a
-                            href="../images/fashion/vintage/google-vintage-07.jpg"
-                            class="image-link"
-                            ><img
-                              src="../images/fashion/vintage/google-vintage-07.jpg"
-                              alt="Image Title"
-                          /></a>
-                          <figcaption>
-                            Women Wearing a Vintage Outfit
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-
-                    <div
-                      class="light-section change-header-color image-row-two"
-                    >
-                      <div
-                        class="one_half last vertical-parallax"
-                        data-startparallax="0"
-                        data-endparallax="0.30"
-                      >
-                        <figure class="image-scale-parent">
-                          <a
-                            href="../images/fashion/vintage/google-vintage-08.jpg"
-                            class="image-link"
-                            ><img
-                              src="../images/fashion/vintage/google-vintage-08.jpg"
-                              alt="Image Title"
-                          /></a>
-                          <figcaption>
-                            Women Wearing a Vintage Outfit
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div
-                        class="one_half last vertical-parallax"
-                        data-startparallax="0"
-                        data-endparallax="0.30"
-                      >
-                        <figure class="image-scale-parent">
-                          <a
-                            href="../images/fashion/vintage/pinterest-vintage-03.jpg"
-                            class="image-link"
-                            ><img
-                              src="../images/fashion/vintage/pinterest-vintage-03.jpg"
-                              alt="Image Title"
-                          /></a>
-                          <figcaption>
-                            Women Wearing a Vintage Outfit
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="content-row full dark-section"
-                    data-bgcolor="#171717"
-                  >
-                    <figure class="has-parallax">
-                      <img
-                        src="../images/hero-vintage.avif"
-                        alt="Image Title"
-                      />
-                    </figure>
-                  </div>
-                </div>
-
-                <div id="project-nav" class="">
-                  <div class="next-project-wrap">
-                    <div
-                      class="next-project-caption text-align-center content-full-width height-title"
-                    >
-                      <div class="next-caption-wrapper">
-                        <div class="caption-wrapper">
-                          <a
-                            class="next-ajax-link-project auto-trigger"
-                            data-type="page-transition"
-                            href="preppy.html"
-                            data-color="#963a8d"
-                            data-firstline="Next"
-                            data-secondline="Project"
-                          ></a>
-                          <div class="next-caption">
-                            <div class="next-hero-subtitle"><span></span></div>
-                            <div class="next-hero-title primary-font-title">
-                              <span>next category</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="next-hero-progress"><span></span></div>
-
-                    <div class="next-project-image-wrapper">
-                      <div class="next-project-image">
-                        <!-- source image : https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mouqy.com%2Fblog%2Fpreppy-aesthetic-with-glasses%2F&psig=AOvVaw2ZyliJXYgUBn2m1teJ4JOW&ust=1727680365759000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiloL3P54gDFQAAAAAdAAAAABAe -->
-                        <div
-                          class="next-project-image-bg"
-                          style="
-                            background-image: url(../images/hero-preppy.jpg);
-                          "
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <footer class="hidden">
-              <div id="footer-container">
-                <div id="backtotop" class="button-wrap left">
-                  <div class="icon-wrap parallax-wrap">
-                    <div class="button-icon parallax-element">
-                      <i class="fa-solid fa-angle-up"></i>
-                    </div>
-                  </div>
-                  <div class="button-text sticky left">
-                    <span data-hover="Back Top">Back Top</span>
-                  </div>
-                </div>
-
-                <div class="footer-middle">
-                  <div class="copyright">
-                    2024 ©
-                    <a class="link" target="_blank" href="./">Flairesta</a>. All
-                    rights reserved.
-                  </div>
-                </div>
-
-                <div class="socials-wrap">
-                  <div class="socials-icon">
-                    <i class="fa-solid fa-share-nodes"></i>
-                  </div>
-                  <div class="socials-text">Follow Us</div>
-                  <ul class="socials">
-                    <li>
-                      <span class="parallax-wrap"
-                        ><a
-                          class="parallax-element"
-                          href="https://www.dribbble.com/"
-                          target="_blank"
-                          >Db</a
-                        ></span
-                      >
-                    </li>
-                    <li>
-                      <span class="parallax-wrap"
-                        ><a
-                          class="parallax-element"
-                          href="https://www.twitter.com/"
-                          target="_blank"
-                          >Tw</a
-                        ></span
-                      >
-                    </li>
-                    <li>
-                      <span class="parallax-wrap"
-                        ><a
-                          class="parallax-element"
-                          href="https://www.facebook.com/"
-                          target="_blank"
-                          >Fb</a
-                        ></span
-                      >
-                    </li>
-                    <li>
-                      <span class="parallax-wrap"
-                        ><a
-                          class="parallax-element"
-                          href="https://www.instagram.com/"
-                          >Ig</a
-                        ></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </footer>
-          </div>
-
-          <div id="app"></div>
+          </footer>
         </div>
+
+        <div id="app"></div>
       </div>
-    </main>
-
-    <div class="cd-cover-layer"></div>
-    <div id="clone-image">
-      <div class="hero-translate"></div>
     </div>
-    <div id="rotate-device"></div>
+  </main>
 
-    <script src="../js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js"></script>
+  <div class="cd-cover-layer"></div>
+  <div id="clone-image">
+    <div class="hero-translate"></div>
+  </div>
+  <div id="rotate-device"></div>
 
-    <script src="../js/fl.js"></script>
-    <script src="../js/plugins.js"></script>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js"></script>
 
-    <script src="../js/common.js"></script>
-    <script src="../js/contact.js"></script>
-    <script src="../js/scripts.js"></script>
-  </body>
+  <script src="../assets/js/fl.js"></script>
+  <script src="../assets/js/plugins.js"></script>
+
+  <script src="../assets/js/common.js"></script>
+  <script src="../assets/js/contact.js"></script>
+  <script src="../assets/js/scripts.js"></script>
+</body>
+
 </html>
