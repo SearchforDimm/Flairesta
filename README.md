@@ -81,7 +81,7 @@ Berikut adalah instruksi yang lebih sederhana untuk menginstall dan menjalankan 
      - Klik kanan pada file *index.html* dan pilih "Open With" -> Browser pilihan Anda (Chrome, Firefox, dll.).
      - Atau, bisa juga menyeret (drag) file *index.html* ke jendela browser.
 
-### Instruksi Tambahan (Opsional)
+### Instruksi Tambahan 
 
 - Jika Anda ingin menjalankan proyek menggunakan server lokal sederhana untuk pengembangan, Anda bisa menggunakan ekstensi seperti *Live Server* di Visual Studio Code.
 
