@@ -84,3 +84,11 @@ Berikut adalah instruksi yang lebih sederhana untuk menginstall dan menjalankan 
 ### Instruksi Tambahan (Opsional)
 
 - Jika Anda ingin menjalankan proyek menggunakan server lokal sederhana untuk pengembangan, Anda bisa menggunakan ekstensi seperti **Live Server** di Visual Studio Code.
+
+
+### Cara penggunaan 
+
+ -https://github.com/user-attachments/assets/bf35daf2-f393-481b-9eaa-54f04b1e4627
+
+
+-https://github.com/user-attachments/assets/5b4de32e-8f69-43b4-b34a-76eff70f1fae
