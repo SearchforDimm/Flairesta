@@ -6,53 +6,53 @@ Flairesta adalah proyek yang dikembangkan untuk sebuah kompetisi dari "TEKNOVIST
 
 ## Daftar Isi
 
-1. **Pendahuluan**
+1. *Pendahuluan*
 
    - Gambaran Umum Flairesta
    - Tujuan Proyek
    - Motivasi Pengembangan
    - Pernyataan Masalah
 
-2. **Teknologi yang Digunakan**
+2. *Teknologi yang Digunakan*
 
    - HTML
    - CSS
    - JavaScript
 
-3. **Tema Fashion**
+3. *Tema Fashion*
 
    - Gambaran Umum Fashion dari Tahun 1900-2000
    - Bagaimana Tema Fashion Mempengaruhi Desain Flairesta
    - Inspirasi Gaya Utama
 
-4. **Fitur**
+4. *Fitur*
 
    - Estetika dan Tata Letak Website
    - Antarmuka Pengguna (UI) Interaktif
    - Kustomisasi Tema Fashion
    - Desain Responsif
 
-5. **Proses Desain**
+5. *Proses Desain*
 
    - Konseptualisasi Estetika
    - Proses Pengembangan Frontend
 
-6. **Tantangan & Solusi**
+6. *Tantangan & Solusi*
 
    - Masalah Desain Estetika
    - Optimisasi Performa
 
-7. **Pelajaran yang Didapat**
+7. *Pelajaran yang Didapat*
 
    - Pengembangan Keterampilan Teknis
    - Wawasan Desain
    - Poin-poin Penting
 
-8. **Kesimpulan**
+8. *Kesimpulan*
    - Refleksi Proyek
    - Rencana Pengembangan di Masa Depan
 
-Berikut adalah instruksi yang lebih sederhana untuk menginstall dan menjalankan proyek **Flairesta** yang hanya menggunakan **HTML, CSS, dan JavaScript**:
+Berikut adalah instruksi yang lebih sederhana untuk menginstall dan menjalankan proyek *Flairesta* yang hanya menggunakan *HTML, CSS, dan JavaScript*:
 
 ---
 
@@ -60,30 +60,30 @@ Berikut adalah instruksi yang lebih sederhana untuk menginstall dan menjalankan 
 
 ### Langkah-langkah Installasi
 
-1. **Clone Repository**
+1. *Clone Repository*
 
    - Buka terminal atau command prompt.
    - Jalankan perintah berikut untuk meng-clone repository dari GitHub:
-     ```bash
+     bash
      git clone https://github.com/SearchforDimm/Flairesta.git
-     ```
+     
 
-2. **Masuk ke Direktori Proyek**
+2. *Masuk ke Direktori Proyek*
 
    - Pindah ke direktori proyek yang baru saja di-clone:
-     ```bash
+     bash
      cd flairesta
-     ```
+     
 
-3. **Buka di Browser**
-   - Tidak diperlukan instalasi tambahan. Anda bisa langsung membuka file **index.html** dari folder proyek di browser.
-   - Caranya, buka file **index.html** dengan salah satu cara berikut:
-     - Klik kanan pada file **index.html** dan pilih "Open With" -> Browser pilihan Anda (Chrome, Firefox, dll.).
-     - Atau, bisa juga menyeret (drag) file **index.html** ke jendela browser.
+3. *Buka di Browser*
+   - Tidak diperlukan instalasi tambahan. Anda bisa langsung membuka file *index.html* dari folder proyek di browser.
+   - Caranya, buka file *index.html* dengan salah satu cara berikut:
+     - Klik kanan pada file *index.html* dan pilih "Open With" -> Browser pilihan Anda (Chrome, Firefox, dll.).
+     - Atau, bisa juga menyeret (drag) file *index.html* ke jendela browser.
 
 ### Instruksi Tambahan (Opsional)
 
-- Jika Anda ingin menjalankan proyek menggunakan server lokal sederhana untuk pengembangan, Anda bisa menggunakan ekstensi seperti **Live Server** di Visual Studio Code.
+- Jika Anda ingin menjalankan proyek menggunakan server lokal sederhana untuk pengembangan, Anda bisa menggunakan ekstensi seperti *Live Server* di Visual Studio Code.
 
 
 ### Preview Halaman / Cara Penggunaan 
@@ -95,3 +95,6 @@ Berikut adalah instruksi yang lebih sederhana untuk menginstall dan menjalankan 
    Page Category
  - https://github.com/user-attachments/assets/f3e261d6-0437-49cb-b40f-bdd4df6e25db
    Home Page
+
+### Note
+   - Ada error sedikit ketika berpindah ke category page, yang dimana image tidak keload, harus direfresh terlebih dahulu.
