@@ -52,9 +52,6 @@ jQuery(function ($) {
 			$('#main-content').addClass('portfolio-page');				
 		}
 		
-			
-		
-		
 		let enableSmoothScrollMobile = true;
 		if( isMobile() ){
 			
