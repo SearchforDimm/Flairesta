@@ -97,6 +97,6 @@ Berikut adalah instruksi yang lebih sederhana untuk menginstall dan menjalankan 
    Home Page
 
 ### Credit 
-   - Dimm | Dev (github.com/searchfordimm)
-   - Amuzha | Dev (github.com/amuzha)
-   - Ayumi | Dev (github.com/ayoumi0416)
+   - Dimm | Dev ([github.com/searchfordimm](https://github.com/searchfordimm))
+   - Amuzha | Dev ([github.com/amuzha](https://github.com/amuzha))
+   - Tsabitha Ayoumi | Dev ([github.com/tsbthayumi](https://github.com/tsbthayumi))
