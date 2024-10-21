@@ -88,12 +88,13 @@ Berikut adalah instruksi yang lebih sederhana untuk menginstall dan menjalankan 
 
 ### Preview Halaman / Cara Penggunaan 
 
- - ![Page About](https://github.com/user-attachments/assets/bf35daf2-f393-481b-9eaa-54f04b1e4627)
-   Page About
- - ![Page Category]([https://github.com/user-attachments/assets/f3e261d6-0437-49cb-b40f-bdd4df6e25db](https://github.com/user-attachments/assets/5b4de32e-8f69-43b4-b34a-76eff70f1fae)
-   Page Category
- - ![Home Page](https://github.com/user-attachments/assets/f3e261d6-0437-49cb-b40f-bdd4df6e25db)
-   Home Page
+ - Home Page
+   ![Home Page](https://github.com/user-attachments/assets/f3e261d6-0437-49cb-b40f-bdd4df6e25db)
+ - Page Category
+   ![Page Category](https://github.com/user-attachments/assets/5b4de32e-8f69-43b4-b34a-76eff70f1fae)
+ - Page About
+   ![Page About](https://github.com/user-attachments/assets/bf35daf2-f393-481b-9eaa-54f04b1e4627)
+   
 
 ### Credit 
    - Dimm | Dev ([github.com/searchfordimm](https://github.com/searchfordimm))
